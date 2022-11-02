@@ -27,7 +27,10 @@
                 <p class="card-text text-light fs-6 d-flex justify-content-center">$2000</p>
             </div>
         </div>
-            <button class="btn btn-lg btn-danger" type="submit" style="width: 120px">Log in</button>
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <button class="btn btn-lg btn-danger" type="submit" style="width: 120px">Order</button>
+          </div>
+
       </div>
     {{-- @endfor --}}
   </div>
