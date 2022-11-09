@@ -3,16 +3,22 @@
 
 <div class="bg-dark d-flex flex-column justify-content-center align-items-center" style="height:540px">
 
-    <form action="/home" class="d-flex flex-column align-items-center">
+    <form action="{{ url('/home') }}" class="d-flex flex-column align-items-center">
 
         <div class="form-floating mb-2">
           <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email" style="width: 500px">
           <label for="floatingInput">Email address</label>
+            @error('email')
+              {{ $message }}
+            @enderror
         </div>
 
         <div class="form-floating">
           <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" style="width: 500px">
           <label for="floatingPassword">Password</label>
+            @error('password')
+            {{ $message }}
+            @enderror
         </div>
 
         <div class="checkbox mb-2">
